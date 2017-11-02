@@ -1,0 +1,9 @@
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/install/strip.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/install.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/list_install_components.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/rebuild_cache.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/edit_cache.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/install/local.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/snappy.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/test.dir
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/CMakeFiles/snappy_unittest.dir

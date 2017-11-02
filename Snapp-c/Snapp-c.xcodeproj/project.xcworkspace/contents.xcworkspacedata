@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../snappy/AUTHORS">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/build">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/cd">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/cmake">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/CMakeLists.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/CONTRIBUTING.md">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/COPYING">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/format_description.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/framing_format.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/NEWS">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/originalbuild">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/README.md">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy_unittest.cc">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-c.cc">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-c.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-internal.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-sinksource.cc">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-sinksource.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-stubs-internal.cc">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-stubs-internal.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-stubs-public.h.in">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-test.cc">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy-test.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy.cc">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy/snappy.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../snappy">
+   </FileRef>
+   <FileRef
+      location = "self:Snapp-c.xcodeproj">
+   </FileRef>
+</Workspace>

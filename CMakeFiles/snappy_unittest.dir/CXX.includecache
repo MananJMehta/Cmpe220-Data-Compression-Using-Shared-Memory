@@ -1,0 +1,128 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-internal.h
+snappy-stubs-internal.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-stubs-internal.h
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-sinksource.h
+stddef.h
+-
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-stubs-internal.h
+config.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/config.h
+string
+-
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+sys/mman.h
+-
+unistd.h
+-
+intrin.h
+-
+snappy-stubs-public.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-stubs-public.h
+sys/byteorder.h
+-
+sys/endian.h
+-
+stdlib.h
+-
+libkern/OSByteOrder.h
+-
+byteswap.h
+-
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-test.cc
+config.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/config.h
+windows.h
+-
+snappy-test.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-test.h
+algorithm
+-
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-test.h
+iostream
+-
+string
+-
+snappy-stubs-internal.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-stubs-internal.h
+stdio.h
+-
+stdarg.h
+-
+sys/mman.h
+-
+sys/resource.h
+-
+sys/time.h
+-
+windows.h
+-
+string
+-
+gtest/gtest.h
+-
+gflags/gflags.h
+-
+zlib.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/zlib.h
+lzo/lzo1x.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/lzo/lzo1x.h
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy.h
+stddef.h
+-
+string
+-
+snappy-stubs-public.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-stubs-public.h
+
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy_unittest.cc
+math.h
+-
+stdlib.h
+-
+algorithm
+-
+string
+-
+utility
+-
+vector
+-
+snappy.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy.h
+snappy-internal.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-internal.h
+snappy-test.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-test.h
+snappy-sinksource.h
+/Users/mananmehta/Google Drive/cmpe220 project/CMPE-220/snappy/snappy-sinksource.h
+
+config.h
+
+snappy-stubs-public.h
+stdint.h
+-
+stddef.h
+-
+sys/uio.h
+-
+string
+-
+
