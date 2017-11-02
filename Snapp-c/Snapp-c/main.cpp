@@ -47,7 +47,7 @@ int main(int argc, char** argv)
     shared_memory_object shm (create_only, "MySharedMemory", read_write);
     
     //Set size
-    shm.truncate(10);
+    shm.truncate(100);
     
     //Map the whole shared memory in this process
     mapped_region region(shm, read_write);
