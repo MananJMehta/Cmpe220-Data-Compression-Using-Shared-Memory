@@ -6,24 +6,27 @@
 //  Copyright © 2017 manan mehta. All rights reserved.
 //
 /*
+ #include "snappy.h"
+ #include <boost/interprocess/shared_memory_object.hpp>
+ #include "snappy-c.h"
+ #include <iostream>
+ #include "string.h"
+ using namespace std;
+ 
+ int main(int argc, const char * argv[]) {
+ char uncompressed[] = "Hello      World!";
+ size_t length = snappy_max_compressed_length(sizeof(uncompressed));
+ char *compressed = new char[length];
+ cout<<sizeof(uncompressed);
+ 
+ snappy_status status = snappy_compress(
+ uncompressed, 17, compressed, &length);
+ cout<<"status "<<status<<"\n"<<sizeof(compressed)<<"\n"<<length<<compressed;
+ return 0;
+ }*/
 #include "snappy.h"
-#include <boost/interprocess/shared_memory_object.hpp>
-#include "snappy-c.h"
-#include <iostream>
-#include "string.h"
-using namespace std;
 
-int main(int argc, const char * argv[]) {
-    char uncompressed[] = "Hello      World!";
-    size_t length = snappy_max_compressed_length(sizeof(uncompressed));
-    char *compressed = new char[length];
-    cout<<sizeof(uncompressed);
-  
-    snappy_status status = snappy_compress(
-                                           uncompressed, 17, compressed, &length);
-    cout<<"status "<<status<<"\n"<<sizeof(compressed)<<"\n"<<length<<compressed;
-    return 0;
-}*/
+#include "snappy-c.h"
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -52,33 +55,49 @@ int main(int argc, char** argv)
     //Map the whole shared memory in this process
     mapped_region region(shm, read_write);
     
-//    //Write all the memory to 1
+    //    //Write all the memory to 1
     memset(region.get_address(), 1, region.get_size());
-//
-//    char *mem = static_cast<char*>(region.get_address());
-//
-//    for(size_t i = 0; i < region.get_size(); ++i)
-//        cout << (int)*mem++ << endl;
-//
-//    char c;
-//    cin >> c;
- volatile char *mem = static_cast<char*>(region.get_address());
-    //int x= mem+9;
+    //
+    //    char *mem = static_cast<char*>(region.get_address());
+    //
+    //    for(size_t i = 0; i < region.get_size(); ++i)
+    //        cout << (int)*mem++ << endl;
+    //
+    //    char c;
+    //    cin >> c;
+    char *mem = static_cast<char*>(region.get_address());
+    
     while(1)
     {
         if(*mem != 1)
         {
             int len = *mem;
+            int i=0;
             while (len != 0)
             {
-                cout<<*mem;
-                (mem++);
+                
+                cout<<*(mem+i);
+                i++;
                 len--;
             }
             break;
         }
         
     }
-    cout << "Exiting main1" << endl;
+    cout<< "\nsizeof "<<sizeof(mem);
+    
+    char uncompressed[1000] ;
+    
+    strncpy(uncompressed, mem,sizeof(uncompressed)-1);
+    cout<<"\nLength before compression "<< strlen(uncompressed);
+    size_t length = snappy_max_compressed_length(sizeof(uncompressed));
+    
+    char *compressed = new char[length];
+    cout<<"\nSize of Uncompressed "<<sizeof(uncompressed);
+    cout<<"\nLength after checking compression "<< length;
+    snappy_status status = snappy_compress(uncompressed, strlen(mem), compressed, &length);
+    
+    cout<<"\nstatus "<<status<<"\nSize of Compressed "<<sizeof(compressed)<<"\nLength of Data Compressed "<<length<<"\nData Compressed: "<<compressed;
+    cout << "\nExiting Server Program" << endl;
     return 0;
 }
